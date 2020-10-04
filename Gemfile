@@ -9,9 +9,10 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 
-gem 'devise'
-gem 'devise-jwt'
-
+gem 'devise', :path => "#{File.expand_path(__FILE__)}/../vendor/gems/devise"
+gem 'devise-jwt', :path => "#{File.expand_path(__FILE__)}/../vendor/gems/devise-jwt"
+gem 'pry'
+gem 'warden-jwt_auth', :path => "#{File.expand_path(__FILE__)}/../vendor/gems/warden-jwt_auth"
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
