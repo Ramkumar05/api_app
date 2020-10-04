@@ -1,0 +1,22 @@
+defaults: &defaults
+  url: redis://localhost:6379
+  db: 2
+
+development:
+  <<: *defaults
+
+qa:
+  url: "redis://<%= ENV['REDIS_HOSTNAME'] %>:<%= ENV['REDIS_PORT'] %>"
+  db: "<%= ENV['REDIS_RDS_NAME'] %>"
+
+test:
+  url: "redis://<%= ENV['REDIS_HOSTNAME'] %>:<%= ENV['REDIS_PORT'] %>"
+  db: "<%= ENV['REDIS_RDS_NAME'] %>"
+
+staging:
+  url: "redis://<%= ENV['REDIS_HOSTNAME'] %>:<%= ENV['REDIS_PORT'] %>"
+  db: "<%= ENV['REDIS_RDS_NAME'] %>"
+
+production:
+  url: "redis://<%= ENV['REDIS_HOSTNAME'] %>:<%= ENV['REDIS_PORT'] %>"
+  db: "<%= ENV['REDIS_RDS_NAME'] %>"
