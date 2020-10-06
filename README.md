@@ -27,3 +27,6 @@ Things you may want to cover:
 Devise login with username: https://web-crunch.com/posts/devise-login-with-username-email
 Authentication behaviour change: https://chelseatroy.com/2019/04/08/modifying-authentication-behavior-in-devise/
 https://www.vic-l.com/jwt-with-refresh-token-using-devise-and-doorkeeper-without-authorization/
+
+rvm 2.6.5
+rvm gemset use rails6.0.2
